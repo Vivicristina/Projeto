@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+
+<body style="font-family: Arial; text-align:center; margin-top:100px;">
+
+  <h2>Bem-vindo!</h2>
+
+  <input id="email" placeholder="Digite seu e-mail"><br><br>
+
+  <input id="senha" type="password" placeholder="Digite sua senha"><br><br>
+
+  <button onclick="entrar()">Entrar</button>
+
+  <script>
+    function entrar() {
+      let email = document.getElementById("email").value;
+      let senha = document.getElementById("senha").value;
+
+      if (email === "" || senha === "") {
+        alert("Preencha tudo!");
+      } else {
+        alert("Deu certo! Email: " + email);
+      }
+    }
+  </script>
+
+</body>
+</html>
