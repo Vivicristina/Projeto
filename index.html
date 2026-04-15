@@ -3,35 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Projeto Perseus</title>
+<title>Meu Projeto Perseus - Mobile</title>
 <style>
+       /* Define o fundo cinza e centraliza o celular */
        body {
-           font-family: Arial, sans-serif;
            background-color: #f4f4f4;
            display: flex;
            flex-direction: column;
            align-items: center;
-           padding: 50px;
+           justify-content: center;
+           min-height: 100vh;
+           margin: 0;
+           font-family: Arial, sans-serif;
+           padding: 20px;
        }
+       /* Estiliza o título */
        h1 {
+           color: #b8962e; /* O dourado do seu projeto */
            margin-bottom: 20px;
+           font-size: 24px;
        }
+       /* Desenha a moldura do celular e esconde o que sai para fora */
        .celular-moldura {
            width: 300px;
            height: 600px;
            background: white;
-           border: 10px solid #333; 
-           border-radius: 40px;
-           box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-           overflow: hidden;
+           border: 12px solid #333; /* Borda preta grossa do aparelho */
+           border-radius: 40px; /* Bordas arredondadas do celular */
+           box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* Sombra para profundidade */
+           overflow: hidden; /* Corta a imagem para ela ficar dentro */
            display: flex;
            justify-content: center;
            align-items: center;
        }
+       /* Faz a imagem preencher o espaço do celular sem distorcer */
        .imagem-app {
            width: 100%;
            height: 100%;
-           object-fit: cover; 
+           object-fit: cover; /* Recorta a imagem para preencher sem deformar */
        }
 </style>
 </head>
@@ -39,13 +48,6 @@
 <h1>Projeto Perseus - Mobile</h1>
 <div class="celular-moldura">
 <img src="iPhone 17 - Pagamento.png" alt="Tela do meu App" class="imagem-app">
-<input type="text" placeholder="Digite seu nome" style="width: 80%; margin-top: 10px;">
-<button style="background: #b8962e; color: white;">Entrar</button>
-</div> ```
-### 2. Para aparecer no FINAL (fora do celular)
-Se você quer adicionar um botão de "Voltar" ou um link para o seu Figma que fique solto na página, coloque **depois que o celular termina**, mas **antes** do `</body>`.
-```html
-</div> <p>Clique abaixo para ver o protótipo completo:</p>
-<a href="SEU_LINK_DO_FIGMA_AQUI">Abrir no Figma</a>
+</div>
 </body>
 </html>
